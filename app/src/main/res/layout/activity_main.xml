@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:title="@string/app_name"
+        app:titleTextAppearance="@style/ToolbarTheme">
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tvOval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:padding="16dp"
+        android:text="椭圆 TextView" />
+
+    <Button
+        android:id="@+id/btnRoundRect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="圆角矩形 Button" />
+
+    <TextView
+        android:id="@+id/tvRect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:drawableTop="@mipmap/ic_launcher"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="方形 TextView" />
+
+    <TextView
+        android:id="@+id/tvCircle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:drawableTop="@mipmap/ic_launcher_round"
+        android:padding="10dp"
+        android:text="圆形 TextView" />
+
+</LinearLayout>
