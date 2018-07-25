@@ -12,7 +12,7 @@ Quick user guide page development.
 build.gradle
 ```gradle
 dependencies {
-  compile 'com.shenhua.libs:neuro-guide:1.0.0'
+  compile 'com.shenhua.libs:neuro-guide:1.0.1'
 }
 ```
 or maven
@@ -20,13 +20,13 @@ or maven
 <dependency>
   <groupId>com.shenhua.libs</groupId>
   <artifactId>neuro-guide</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <type>pom</type>
 </dependency>
 ```
 or lvy
 ```lvy
-<dependency org='com.shenhua.libs' name='neuro-guide' rev='1.0.0'>
+<dependency org='com.shenhua.libs' name='neuro-guide' rev='1.0.1'>
   <artifact name='neuro-guide' ext='pom' ></artifact>
 </dependency>
 ```
