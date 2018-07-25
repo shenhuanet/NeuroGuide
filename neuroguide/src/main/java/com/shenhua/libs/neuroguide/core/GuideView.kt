@@ -59,10 +59,10 @@ class GuideView @JvmOverloads constructor(context: Context, attrs: AttributeSet?
 
     override fun onAttachedToWindow() {
         super.onAttachedToWindow()
-        val contentView = LayoutInflater.from(context).inflate(guidePage!!.contentView, null)
+        val contentView = LayoutInflater.from(context).inflate(guidePage!!.getContentView(), null)
         addView(contentView)
-        nextView = contentView.findViewById(guidePage!!.nextPageView)
-        exitView = contentView.findViewById(guidePage!!.exitView)
+        nextView = contentView.findViewById(guidePage!!.getNextPageView())
+        exitView = contentView.findViewById(guidePage!!.getExitView())
     }
 
     override fun dispatchTouchEvent(ev: MotionEvent): Boolean {

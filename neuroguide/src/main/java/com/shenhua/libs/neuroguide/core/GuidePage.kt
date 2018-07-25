@@ -13,9 +13,9 @@ import java.util.*
  */
 class GuidePage {
 
-    var contentView: Int = 0
-    var nextPageView: Int = 0
-    var exitView: Int = 0
+    private var contentView: Int = 0
+    private var nextPageView: Int = 0
+    private var exitView: Int = 0
     val highLights = ArrayList<HighLight>()
 
     /**
@@ -101,5 +101,17 @@ class GuidePage {
     fun setExitView(@IdRes exitId: Int): GuidePage {
         this.exitView = exitId
         return this
+    }
+
+    fun getContentView(): Int {
+        return this.contentView
+    }
+
+    fun getNextPageView(): Int {
+        return this.nextPageView
+    }
+
+    fun getExitView(): Int {
+        return this.exitView
     }
 }

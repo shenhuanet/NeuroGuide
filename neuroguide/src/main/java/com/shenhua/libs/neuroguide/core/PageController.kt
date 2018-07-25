@@ -39,7 +39,7 @@ class PageController(builder: Builder) {
     private var indexOfChild = -1
     private var mCurrentPage = 0
     private var mCurrentGuideView: GuideView? = null
-    private var isShow = false
+    var isShow = false
 
     init {
         this.activity = builder.activity
