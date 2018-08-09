@@ -31,7 +31,7 @@ or lvy
 </dependency>
 ```
 ### Code
-Kotlin (TCP-NIO)
+Kotlin
 ```kotlin
 val guidePage = GuidePage()
         .addHighLight(tvOval, HighLight.Shape.OVAL)
