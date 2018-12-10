@@ -26,7 +26,7 @@ class GuidePage {
      * @return GuidePage
      */
     @JvmOverloads
-    fun addHighLight(view: View, dashed: Boolean = false): GuidePage {
+    fun addHighLight(view: View?, dashed: Boolean = false): GuidePage {
         return addHighLight(view, HighLight.Shape.RECTANGLE, 0, 0, dashed)
     }
 
@@ -39,7 +39,7 @@ class GuidePage {
      * @return GuidePage
      */
     @JvmOverloads
-    fun addHighLight(view: View, radius: Int, dashed: Boolean = false): GuidePage {
+    fun addHighLight(view: View?, radius: Int, dashed: Boolean = false): GuidePage {
         return addHighLight(view, HighLight.Shape.CIRCLE, 0, radius, dashed)
     }
 
@@ -52,7 +52,7 @@ class GuidePage {
      * @return GuidePage
      */
     @JvmOverloads
-    fun addHighLight(view: View, shape: HighLight.Shape, dashed: Boolean = false): GuidePage {
+    fun addHighLight(view: View?, shape: HighLight.Shape, dashed: Boolean = false): GuidePage {
         return addHighLight(view, shape, 10, 4, dashed)
     }
 
@@ -66,7 +66,7 @@ class GuidePage {
      * @param dashed  是否添加虚线框
      */
     @JvmOverloads
-    fun addHighLight(view: View, shape: HighLight.Shape, round: Int, padding: Int, dashed: Boolean = false): GuidePage {
+    fun addHighLight(view: View?, shape: HighLight.Shape, round: Int, padding: Int, dashed: Boolean = false): GuidePage {
         val highlight = HighlightView(view, shape, round, padding, dashed)
         highLights.add(highlight)
         return this

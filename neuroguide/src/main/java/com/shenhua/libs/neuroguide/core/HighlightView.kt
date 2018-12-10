@@ -22,14 +22,14 @@ class HighlightView internal constructor(private val mHole: View?, override val 
     override val radius: Float
         get() {
             if (mHole == null) {
-                throw IllegalArgumentException("the highlight view is null!")
+                return 0f
             }
             return (Math.max(mHole.width / 2, mHole.height / 2) + padding).toFloat()
         }
 
     override fun getRectF(view: View): RectF {
         if (mHole == null) {
-            throw IllegalArgumentException("the highlight view is null!")
+            return RectF()
         }
         if (rectF == null) {
             rectF = RectF()
@@ -46,7 +46,7 @@ class HighlightView internal constructor(private val mHole: View?, override val 
 
         fun getLocationInView(parent: View?, child: View?): Rect {
             if (child == null || parent == null) {
-                throw IllegalArgumentException("parent and child can not be null .")
+                return Rect()
             }
 
             var decorView: View? = null

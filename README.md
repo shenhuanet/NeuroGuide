@@ -1,5 +1,5 @@
 # SenSocketClient
-[![jCenter](https://img.shields.io/badge/NeuroGuide-1.0.1-green.svg) ](https://dl.bintray.com/shenhuanetos/maven/com/shenhua/libs/neuro-guide/1.0.1/)
+[![jCenter](https://img.shields.io/badge/NeuroGuide-1.0.2-green.svg) ](https://dl.bintray.com/shenhuanetos/maven/com/shenhua/libs/neuro-guide/1.0.2/)
 [![Build Status](https://img.shields.io/travis/rust-lang/rust/master.svg)](https://bintray.com/shenhuanetos/maven/NeuroGuide)
 [![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
 
@@ -12,7 +12,7 @@ Quick user guide page development.
 build.gradle
 ```gradle
 dependencies {
-  compile 'com.shenhua.libs:neuro-guide:1.0.1'
+  compile 'com.shenhua.libs:neuro-guide:1.0.2'
 }
 ```
 or maven
@@ -20,13 +20,13 @@ or maven
 <dependency>
   <groupId>com.shenhua.libs</groupId>
   <artifactId>neuro-guide</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <type>pom</type>
 </dependency>
 ```
 or lvy
 ```lvy
-<dependency org='com.shenhua.libs' name='neuro-guide' rev='1.0.1'>
+<dependency org='com.shenhua.libs' name='neuro-guide' rev='1.0.2'>
   <artifact name='neuro-guide' ext='pom' ></artifact>
 </dependency>
 ```
